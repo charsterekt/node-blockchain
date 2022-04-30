@@ -50,16 +50,16 @@ Add prefix `/ico` before Node's APIs for ICO's APIs
     
     1st Node
     ```
-    HTTP_PORT=3001 P2P_PORT=5001 npm run dev
+    HTTP_PORT=3001 P2P_PORT=5001 npm run devMon
     ```
     2nd Node - add the 1st node as peer
     ```
-    HTTP_PORT=3002 P2P_PORT=5002 PEERS=wc://localhost:5001 npm run dev
+    HTTP_PORT=3002 P2P_PORT=5002 PEERS=wc://localhost:5001 npm run devMon
     ```
 
     3rd Node - add the 1st and 2nd node as peer
     ```
-    HTTP_PORT=3003 P2P_PORT=5003 PEERS=wc://localhost:5001,wc://localhost:5002 npm run dev
+    HTTP_PORT=3003 P2P_PORT=5003 PEERS=wc://localhost:5001,wc://localhost:5002 npm run devMon
     ```
 
 2. Initially, they all have zero balance. Run an ICO and send then some coins. You may or may not add all of the nodes but add at least one.
