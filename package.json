@@ -1,0 +1,28 @@
+{
+  "name": "blockchain",
+  "version": "1.0.0",
+  "description": "",
+  "main": "block.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "devMon": "nodemon ./app",
+    "peer2": "cross-env HTTP_PORT=3002 P2P_PORT=5002 PEERS=ws://localhost:5001 nodemon ./app",
+    "peer3": "cross-env HTTP_PORT=3003 P2P_PORT=5003 PEERS=ws://localhost:5001,ws://localhost:5002 nodemon ./app",
+    "ico": "nodemon ./ico"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "cross-env": "^7.0.3",
+    "nodemon": "^2.0.15"
+  },
+  "dependencies": {
+    "body-parser": "^1.20.0",
+    "crypto-js": "^3.1.9-1",
+    "elliptic": "^6.5.4",
+    "express": "^4.17.3",
+    "uuid": "^3.1.0",
+    "ws": "^8.5.0"
+  }
+}
